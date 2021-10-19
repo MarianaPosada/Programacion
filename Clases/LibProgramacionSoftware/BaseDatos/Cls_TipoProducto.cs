@@ -60,7 +60,7 @@ namespace LibProgramacionSoftware.BaseDatos
         }
         public bool Actualizar()
         {
-            SQL = "UPDATE tblTipoProducto" + "strNombre_TIPR = @prNombre, " + "blnActivo_TIPR = @prActivo " +
+            SQL = "UPDATE tblTipoProducto SET " + "strNombre_TIPR = @prNombre, " + "blnActivo_TIPR = @prActivo " +
                 "WHERE intCodigo_TIPR = @prCodigo";
 
             clsConexion oConexion = new clsConexion();
@@ -102,7 +102,7 @@ namespace LibProgramacionSoftware.BaseDatos
             SQL = "SELECT  strNombre_TIPR, blnActivo_TIPR " + "FROM  tblTipoProducto " + "WHERE  intCodigo_TIPR = @prCodigo";
             clsConexion oConexion = new clsConexion();
             oConexion.SQL = SQL;
-            oConexion.AgregarParametro(" @prCodigo", Codigo);
+            oConexion.AgregarParametro("@prCodigo", Codigo);
             //Se invoca el metodo consultar, que llena el objeto Reader con la información de la consulta
             //El objeto Reader tiene una propiedad  .hasRows que indica si llegan datos o no de la consulta
             if (oConexion.Consultar())
@@ -110,8 +110,10 @@ namespace LibProgramacionSoftware.BaseDatos
                 //Se hizo la consulta, se debe validar si retornó datos o no 
                 if (oConexion.Reader.HasRows)
                 {
-                    //Hay Datos en la consulta
-                    //para leer los daros, estos quedan almacenados en el objeto Reader, como si fuera un vector 
+                
+                    //Hay datos en la consulta, lo primero es leer la información con el método .Read() del objeto Reader
+                    oConexion.Reader.Read();
+                    //para leer los datos, estos quedan almacenados en el objeto Reader, como si fuera un vector 
                     //donde en la posición 0 esta la primer columna de la consulta
                     //para capturar los datos de respuesta de la consulta se utiliza el metodo .GetValue() que es generico,
                     //o los metodos .GetInt32(n), .GetString(n) o .GetDouble(n), etc....
