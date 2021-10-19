@@ -123,6 +123,7 @@ namespace LibProgramacionSoftware.BaseDatos
                     // Activo = Convert.ToBoolean(oConexion.Reader.GetValue(1));  -- otra manera de hacerlo
 
                     Activo = oConexion.Reader.GetBoolean(1);
+                    oConexion.CerrarConexion();
                     return true;
                 }
                 else

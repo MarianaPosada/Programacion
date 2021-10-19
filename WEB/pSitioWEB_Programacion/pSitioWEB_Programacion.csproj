@@ -110,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="BaseDatos\Parcial_3.aspx" />
     <Content Include="BaseDatos\TipoProducto.aspx" />
     <Content Include="ClasesBasicas\VentaProducto.aspx" />
     <Content Include="Contact.aspx" />
@@ -179,6 +180,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BaseDatos\Parcial_3.aspx.cs">
+      <DependentUpon>Parcial_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseDatos\Parcial_3.aspx.designer.cs">
+      <DependentUpon>Parcial_3.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BaseDatos\TipoProducto.aspx.cs">
       <DependentUpon>TipoProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseDatos\Cls_Parcial_3.cs" />
     <Compile Include="BaseDatos\Cls_TipoProducto.cs" />
     <Compile Include="ClasesBasicas\ClsVentaProducto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
