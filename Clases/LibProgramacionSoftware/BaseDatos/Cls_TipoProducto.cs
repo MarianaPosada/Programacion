@@ -120,7 +120,6 @@ namespace LibProgramacionSoftware.BaseDatos
                     // Nombre = Convert.ToString(oConexion.Reader.GetValue(0));  -- otra manera de hacerlo
                     // Activo = Convert.ToBoolean(oConexion.Reader.GetValue(1));  -- otra manera de hacerlo
 
-                    Nombre = oConexion.Reader.GetString(0);
                     Activo = oConexion.Reader.GetBoolean(1);
                     return true;
                 }
