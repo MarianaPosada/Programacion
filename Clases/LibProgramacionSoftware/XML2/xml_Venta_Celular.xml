@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Venta_Celular>
+	<Descuento_Valor_Plan>
+		<Valor_Equipo>
+		<Descuento  MIN="3000" MAX="15000" EMIN ="100000" EMAX ="800000">0</Descuento>
+		<Descuento  MIN="4000" MAX="15000" EMIN ="800000" EMAX ="1800000" >7</Descuento>
+		<Descuento  MIN="5000" MAX="15000" EMIN ="1800000" EMAX ="9999999">15</Descuento>
+		<Descuento  MIN="15000" MAX="40000" EMIN ="100000" EMAX ="799999">8</Descuento>
+		<Descuento  MIN="15000" MAX="40000" EMIN ="800000" EMAX ="1800000">12</Descuento>
+		<Descuento  MIN="15000" MAX="40000" EMIN ="1800000" EMAX ="9999999">20</Descuento>
+		<Descuento  MIN="40000" MAX="99999" EMIN ="100000" EMAX ="800000">15</Descuento>
+		<Descuento  MIN="40000" MAX="99999" EMIN ="800000" EMAX ="1800000">25</Descuento>
+		<Descuento  MIN="40000" MAX="99999" EMIN ="1800000" EMAX ="9999999">30</Descuento>
+		
+		</Valor_Equipo>
+		
+	</Descuento_Valor_Plan>
+	
+</Venta_Celular>
